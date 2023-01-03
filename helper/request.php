@@ -3,7 +3,7 @@ function request($key = null){
     $obj =(object) ['controller'=>'Login','method'=>'index','get'=> $_GET, 'post'=>
     $_POST, 'para'=>''];
 
-    if(isset($_GET['url'])){
+    if(isset($_GET['url'])){ 
         $url = $_GET['url'];
         $url = rtrim($url,'/');
         $url = explode('/',$url);
